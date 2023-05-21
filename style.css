@@ -1,7 +1,4 @@
-
-
 body {
-    background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(105, 22, 147, 1) 52%, rgba(0, 212, 255, 1) 88%);
     font-family: 'Courier New', Courier, monospace;
     color: white;
@@ -12,6 +9,7 @@ body {
     margin: 4.5% auto;
     display: flex;
     align-items: center;
+    text-align: center;
     }
     
     .section1 {
@@ -19,6 +17,8 @@ body {
     border: 5px solid black;
     padding: 0.1%;
     border-radius: 8px;
+    height: 100vh;
+    padding: 10px;
     }
     
     h1 {
@@ -41,10 +41,17 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
     border-top-right-radius: 1%;
     border-bottom-right-radius: 1%;
-    padding: 0 2%;
+    padding: 0.1%;
     width: 55%;
     height: 100vh;
     display: grid;
+    border-right: 5px solid black;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+
     }
     
     .stats {
@@ -57,7 +64,7 @@ body {
     
     .accept, .texto {
     width: 30%;
-    height: 2.5%;
+    height: 5vh;
     text-align: center;
     box-sizing: border-box;
     }
@@ -72,7 +79,7 @@ body {
     }
 
     .section3 {
-        font-size: larger;
+        font-size:larger;
         display: grid;
         width: 80%;
         align-items: center;
@@ -98,4 +105,84 @@ body {
         border: 2px solid rgb(197, 239, 239);
         color: white
     }
+
+@media (max-width: 800px) {
+    main {
+        margin: 0%;
+        width: 95%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    table {
+       width: 100%; 
+       
+    }
+    button{
+        width: 100%;
+    }
+    .section2,.section1{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+        border-bottom: 4px solid black;
+        text-align: center;
+    }
+    .stats{
+        width: 100%;
+        text-align: center;
+    }
+    .restart{
+        width: 100%;
+        height: 50%;
+    }
+    .section3{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .accept, .texto {
+        width: 30%;
+        height: 3%;
+        text-align: center;
+        box-sizing: border-box;
+        }
+}
+
+@media (max-width: 450px) {
+    main {
+        margin-top: 0%;
+        width: 99%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    table {
+        width: 100%
+    }
+    tr {
+        padding: 10%;
+    }
+    td {
+        padding: 1%;
+    }
+    button {
+        width: 100%
+    }
+    .section1 {
+        padding: 2%;
+    }
+    .restart{
+        width: 100%;
+        height: 50%;
+    }
+    .section3{
+        width: 99%;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
