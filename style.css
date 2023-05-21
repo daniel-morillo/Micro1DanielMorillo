@@ -17,9 +17,11 @@ body {
     border: 5px solid black;
     padding: 0.1%;
     border-radius: 8px;
-    height: 100vh;
+    height: 105vh;
     padding: 10px;
+    
     }
+ 
     
     h1 {
     text-align: center;
@@ -43,7 +45,7 @@ body {
     border-bottom-right-radius: 1%;
     padding: 0.1%;
     width: 55%;
-    height: 100vh;
+    height: 105vh;
     display: grid;
     border-right: 5px solid black;
     border-top: 5px solid black;
@@ -63,8 +65,8 @@ body {
     }
     
     .accept, .texto {
-    width: 30%;
-    height: 5vh;
+    width: 15vw;
+    height: 4vh;
     text-align: center;
     box-sizing: border-box;
     }
