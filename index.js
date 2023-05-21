@@ -55,6 +55,8 @@ function countTime() {
             clearInterval(regret)
             blockAll()
             getPoints()
+            showmoves.innerHTML = `No has completado el Memorama 🫤`
+            showsuccess.innerHTML = "Aciertos: " + success + "😳"
         }
     }, 1000)
 
